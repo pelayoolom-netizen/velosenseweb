@@ -1,0 +1,8 @@
+{
+  "name": "VeloSense — Ciclocomputador Inteligente y App MTB",
+  "description": "VeloSense convierte tu móvil en un ciclocomputador inteligente para registrar rutas, analizar tu rendimiento y entrenar mejor.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

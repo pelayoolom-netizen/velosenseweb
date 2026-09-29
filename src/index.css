@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #08090C;
+  color: #F1F5F9;
+  overflow-x: hidden;
+}
+
+/* Glassmorphism helpers with high contrast and performance */
+.glass-panel {
+  background: rgba(18, 21, 28, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-panel-hover {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-panel-hover:hover {
+  background: rgba(22, 27, 36, 0.85);
+  border-color: rgba(16, 185, 129, 0.3);
+  box-shadow: 0 10px 30px -10px rgba(16, 185, 129, 0.12);
+}
+
+.glass-pill {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+}
+
+/* Subtle glow accents */
+.emerald-glow {
+  box-shadow: 0 0 35px -5px rgba(16, 185, 129, 0.35);
+}
+
+.emerald-glow-sm {
+  box-shadow: 0 0 20px -3px rgba(16, 185, 129, 0.25);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #090A0D;
+}
+::-webkit-scrollbar-thumb {
+  background: #1E2430;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2D3748;
+}
